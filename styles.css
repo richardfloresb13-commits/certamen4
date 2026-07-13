@@ -1,0 +1,129 @@
+* { 
+  box-sizing: border-box; 
+}
+body { 
+  margin: 0; 
+  font-family: system-ui, -apple-system, sans-serif; 
+  background: #f4f6fb; 
+}
+.app { 
+  max-width: 900px; 
+  margin: 40px auto; 
+  padding: 24px; 
+}
+h1 { 
+  text-align: center; 
+}
+.controles { 
+  display: flex; 
+  gap: 12px; 
+  margin: 0 auto 20px; 
+  max-width: 600px; 
+}
+.controles input { 
+  flex: 1; 
+  padding: 10px 12px; 
+  border: 1px solid #ccd; 
+  border-radius: 10px; 
+  font-size: 15px; 
+}
+.controles select { 
+  padding: 10px; 
+  border: 1px solid #ccd; 
+  border-radius: 10px; 
+  font-size: 14px; 
+}
+.info { 
+  text-align: center; 
+  color: #666; 
+  font-size: 14px; 
+}
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 16px; 
+}
+.card { 
+  background: #fff; 
+  border-radius: 12px; 
+  padding: 16px; 
+  box-shadow: 0 2px 10px rgba(0,0,0,.06); 
+  display: flex; 
+  flex-direction: column; 
+}
+.card img { 
+  height: 120px; 
+  object-fit: contain; 
+  margin-bottom: 10px; 
+}
+.card h3 { 
+  font-size: 14px; 
+  margin: 0 0 10px; 
+  flex: 1; 
+}
+.meta { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+.precio { 
+  font-weight: 700; 
+  color: #4f46e5; 
+}
+.categoria { 
+  font-size: 11px; 
+  background: #eef; 
+  color: #4f46e5; 
+  padding: 2px 8px; 
+  border-radius: 10px; 
+}
+.formulario-add {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+.formulario-add h3 {
+  margin-top: 0;
+  color: #333;
+}
+.form-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.form-group input {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px;
+  border: 1px solid #ccd;
+  border-radius: 8px;
+}
+.form-group button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.form-group button:hover {
+  background: #4338ca;
+}
+.btn-eliminar {
+  margin-top: 12px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn-eliminar:hover {
+  background: #dc2626;
+}
